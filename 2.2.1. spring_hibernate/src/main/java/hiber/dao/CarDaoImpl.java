@@ -22,7 +22,6 @@ public class CarDaoImpl implements CarDao{
     }
 
     @Override
-    @Transactional
     @SuppressWarnings("unchecked")
     public List<Car> listCars() {
         TypedQuery<Car> query=sessionFactory.getCurrentSession().createQuery("from Car");
